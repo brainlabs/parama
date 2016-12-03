@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Master Data Location | Parama</title>
+    <title>Transaction History | Parama</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
@@ -102,17 +102,17 @@
     <aside class="main-sidebar" w3-include-html="layout/menu.html">
     </aside>
 
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Master Data Location
-                <small>Preview page</small>
+                Transaction History
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Master Data Location</li>
+                <li class="active">Transaction History</li>
             </ol>
         </section>
 
@@ -122,73 +122,88 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="box">
                         <div class="box-header with-border">
-
-                            <h3 class="box-title">Master Data Location</h3>
-                            <a href="masterdataadd.html" class="btn btn-primary pull-right">
-                                <i class="glyphicon glyphicon-plus"></i>
-                                Create New
-                            </a>
+                            <h3 class="box-title">Transaction History<h3>
+                            <!-- <a href="useradd.html" class="btn btn-sm btn-primary pull-right">
+                              <i class="glyphicon glyphicon-plus"></i>  Create New
+                            </a> -->
                         </div>
+                        <div style="right: 16px;">
+
+                        </div>
+                        <br>
+                        <div class="form-group">
+                          <label for="name" class="col-sm-2 control-label">Lokasi / Area</label>
+
+                          <div class="col-sm-4">
+                            <select class="form-control">
+                              <option>Select Location</option>
+                              <option>Location 1</option>
+                              <option>Location 2</option>
+                              <option>Location 3</option>
+                              <option>Location 4</option>
+                            </select>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                          <label for="name" class="col-sm-2 control-label">Date</label>
+
+                          <div class="col-sm-2">
+                            <div class="input-group">
+                              <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                              </div>
+                              <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="input-group">
+                              <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                              </div>
+                              <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
+                            </div>
+                          </div>
+                        </div>
+                        <br><br>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-danger">Filter</button>
+                                <button type="submit" class="btn btn-danger">Export CSV</button>
+                                <button type="submit" class="btn btn-danger">Reset</button>
+                            </div>
+                        </div>
+                        
+                        <br><hr>
                         <!-- /.box-header -->
                         <div class="box-body">
                             <table class="table table-bordered">
                                 <thead>
-
                                 <th>#</th>
-                                <th>Office Name</th>
-                                <th>Alamat</th>
-                                <th>Telp</th>
-                                <th>Email</th>
-                                <th align="right" style="text-align: right">Action</th>
-
+                                <th>User</th>
+                                <th>Data</th>
+                                <th>From Data</th>
+                                <th>Update</th>
+                                <th>Date</th>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Jhon</td>
-                                    <td>Doe</td>
-                                    <td>1221223331</td>
-                                    <td>jshon.doe@parama.com</td>
-                                    <td align="right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-warning">
-                                                <i class="glyphicon glyphicon-refresh"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-info">
-                                                <i class="glyphicon glyphicon-eye-open"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-success">
-                                                <i class="glyphicon glyphicon-edit"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-danger">
-                                                <i class="glyphicon glyphicon-trash"></i>
-                                            </button>
-                                        </div>
-                                    </td>
+                                    <td>firmansyahdiar</td>
+                                    <td>Username</td>
+                                    <td>Diar</td>
+                                    <td>Diar Firmansyah</td>
+                                    <td>24-11-2016</td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Jhon</td>
-                                    <td>Doe</td>
-                                    <td>1221223331</td>
-                                    <td>jshon.doe@parama.com</td>
-                                    <td align="right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-warning">
-                                                <i class="glyphicon glyphicon-refresh"></i>
-                                            </button>
-                                            <a href="profile.html" class="btn btn-info">
-                                                <i class="glyphicon glyphicon-eye-open"></i>
-                                            </a>
-                                            <button type="button" class="btn btn-success">
-                                                <i class="glyphicon glyphicon-edit"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-danger">
-                                                <i class="glyphicon glyphicon-trash"></i>
-                                            </button>
-                                        </div>
-                                    </td>
+                                    <td>2</td>
+                                    <td>firmansyahdiar</td>
+                                    <td>Telp</td>
+                                    <td>0251</td>
+                                    <td>021</td>
+                                    <td>24-11-2016</td>
                                 </tr>
+
                                 </tbody>
                             </table>
 
