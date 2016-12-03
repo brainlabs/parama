@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Profile | Parama</title>
+    <title>Users | Parama</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
@@ -176,12 +176,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Profile
+                Users
                 <small>Preview page</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Profile</li>
+                <li class="active">Users</li>
             </ol>
         </section>
 
@@ -191,71 +191,50 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Profile</h3>
+                            <h3 class="box-title">Add User</h3>
                         </div>
-                        <div style="position:absolute; right: 16px;">
-                            <button type="button" class="btn btn-primary">Add Data</button>
-                        </div><br><br>
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>NIK</th>
-                                    <th>Email</th>
-                                    <th align="right" style="text-align: right">Action</th>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Jhon</td>
-                                    <td>Doe</td>
-                                    <td>1221223331</td>
-                                    <td>jshon.doe@parama.com</td>
-                                    <td align="right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-warning">
-                                                <i class="glyphicon glyphicon-refresh"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-info">
-                                                <i class="glyphicon glyphicon-eye-open"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-success">
-                                                <i class="glyphicon glyphicon-edit"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-danger">
-                                                <i class="glyphicon glyphicon-trash"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Jhon</td>
-                                    <td>Doe</td>
-                                    <td>1221223331</td>
-                                    <td>jshon.doe@parama.com</td>
-                                    <td align="right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-warning">
-                                                <i class="glyphicon glyphicon-refresh"></i>
-                                            </button>
-                                            <a href="profile.html" class="btn btn-info" >
-                                                <i class="glyphicon glyphicon-eye-open"></i>
-                                            </a>
-                                            <button type="button" class="btn btn-success">
-                                                <i class="glyphicon glyphicon-edit"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-danger">
-                                                <i class="glyphicon glyphicon-trash"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <form class="form-horizontal">
+                              <div class="box-body">
+                                <div class="form-group">
+                                  <label for="name" class="col-sm-1 control-label">Full Nama</label>
+
+                                  <div class="col-sm-4">
+                                    <input type="name" class="form-control" id="name" placeholder="Full Name">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail3" class="col-sm-1 control-label">Email</label>
+
+                                  <div class="col-sm-4">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-1 control-label">Password</label>
+
+                                  <div class="col-sm-4">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-sm-offset-1 col-sm-10">
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox"> Full Admin
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.box-body -->
+                              <div class="box-footer">
+                                <a href="user.html"> <button type="submit" class="btn btn-info pull-right">Cancel</button> </a>
+                                <button type="submit" class="btn btn-info pull-right">Save</button>
+                              </div>
+                              <!-- /.box-footer -->
+                            </form>
 
                         </div>
                         <!-- /.box-body -->
