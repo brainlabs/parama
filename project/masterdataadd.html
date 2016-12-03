@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Master Data Location | Parama</title>
+    <title>Users | Parama</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
@@ -176,12 +176,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Master Data Location
+                Users
                 <small>Preview page</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Master Data Location</li>
+                <li class="active">Users</li>
             </ol>
         </section>
 
@@ -191,75 +191,48 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Data Location</h3>
-                            <a href="masterdataadd.html" class="btn btn-sm btn-primary pull-right">
-                              <i class="glyphicon glyphicon-plus"></i>  Create New
-                            </a>
+                            <h3 class="box-title">Add User</h3>
                         </div>
-                        <div style="position:absolute; right: 16px;">
-
-                        </div>
-                        <br><br>
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <th>#</th>
-                                    <th>Office Name</th>
-                                    <th>Alamat</th>
-                                    <th>Telp</th>
-                                    <th>Email</th>
-                                    <th align="right" style="text-align: right">Action</th>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Jhon</td>
-                                    <td>Doe</td>
-                                    <td>1221223331</td>
-                                    <td>jshon.doe@parama.com</td>
-                                    <td align="right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-warning">
-                                                <i class="glyphicon glyphicon-refresh"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-info">
-                                                <i class="glyphicon glyphicon-eye-open"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-success">
-                                                <i class="glyphicon glyphicon-edit"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-danger">
-                                                <i class="glyphicon glyphicon-trash"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Jhon</td>
-                                    <td>Doe</td>
-                                    <td>1221223331</td>
-                                    <td>jshon.doe@parama.com</td>
-                                    <td align="right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-warning">
-                                                <i class="glyphicon glyphicon-refresh"></i>
-                                            </button>
-                                            <a href="profile.html" class="btn btn-info" >
-                                                <i class="glyphicon glyphicon-eye-open"></i>
-                                            </a>
-                                            <button type="button" class="btn btn-success">
-                                                <i class="glyphicon glyphicon-edit"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-danger">
-                                                <i class="glyphicon glyphicon-trash"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <form class="form-horizontal">
+                              <div class="box-body">
+                                <div class="form-group">
+                                  <label for="name" class="col-sm-2 control-label">Office Name</label>
+
+                                  <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="name" placeholder="Office Name">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="name" class="col-sm-2 control-label">Alamat</label>
+
+                                  <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="name" placeholder="Alamat">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="name" class="col-sm-2 control-label">Telp</label>
+
+                                  <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="name" placeholder="Telp">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+
+                                  <div class="col-sm-4">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.box-body -->
+                              <div class="box-footer">
+                                <a href="user.html"> <button type="submit" class="btn btn-info pull-right">Cancel</button> </a>
+                                <button type="submit" class="btn btn-info pull-right">Save</button>
+                              </div>
+                              <!-- /.box-footer -->
+                            </form>
 
                         </div>
                         <!-- /.box-body -->
